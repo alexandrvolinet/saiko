@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/styles/hero.css" />
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gsap saytomo</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <nav class="nav">
+        <div class="nav__left">
+          <div>
+            <a href="#">PRODUCTS</a>
+          </div>
+
+          <div>
+            <a href="#">ABOUT</a>
+          </div>
+        </div>
+        <div class="nav__logo">
+          <img src="./src/img/logo/logo.svg" alt="Logo" />
+        </div>
+        <div class="nav__right">
+          <div>
+            <a href="#">CONTACT</a>
+          </div>
+          <div>
+            <a href="#">CART</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- change default highlight style -->
+    <select style="display: none" id="highlight-style">
+      <option>background</option>
+      <option>underline</option>
+    </select>
+
+    <section class="hero">
+      <h2 class="hero-text">nikushimi</h2>
+      <canvas class="canvas"></canvas>
+    </section>
+
+    <h1>The Carbon in Our Apple Pies</h1>
+
+    <p>
+      Great turbulent clouds something incredible is waiting to be known
+      Jean-Fran&ccedil;ois Champollion hundreds of thousands science hearts of
+      the stars.
+      <mark class="text-highlight">Bits of moving fluff</mark> another world
+      brain is the seed of intelligence how far away bits of moving fluff realm
+      of the galaxies? Cosmic fugue a still more glorious dawn awaits rings of
+      Uranus dream of the mind's eye not a sunrise but a galaxyrise the only
+      home we've ever known.
+    </p>
+
+    <section style="height: 100vh"></section>
+
+    <script type="module" src="./src/script/header.js"></script>
+    <script type="module" src="./src/script/hero.js"></script>
+    <script type="module" src="./src/script/main.js"></script>
+    <script type="module" src="./src/script/highlight.js"></script>
+  </body>
+</html>

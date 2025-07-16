@@ -1,0 +1,25 @@
+@font-face {
+  font-family: 'Azonix';
+  src: url('../fonts/Azonix.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  background-color: #1E2123;
+  color: #E9E6E5;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
