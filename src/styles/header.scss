@@ -1,6 +1,4 @@
 .header {
-    // visibility: hidden;
-    // margin-top: 20px;
     position: fixed;
     top: 0;
     width: 100%;
@@ -9,13 +7,14 @@
 }
 
 .nav {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 10px 5%;
     color: #fff;
 
-    div {
+    .menu {
         overflow: hidden;
     }
 
@@ -33,6 +32,8 @@
     }
 
     &__logo svg {
+        transform: translateX(-50%);
+        bottom: 0%;
         width: 40px;
         transition: width 0.3s ease;
         overflow: visible;
@@ -45,18 +46,17 @@
         align-items: center;
     }
 
-
-    &::after {
-        content: "";
+    .nav__line {
         position: absolute;
         bottom: 0;
         left: 50%;
-        transform: translateX(-50%);
         width: 90%;
-        height: 2px;
+        height: 3px;
         background: radial-gradient(ellipse at center,
-                rgba(255, 255, 255, 0.5) 20%,
-                rgba(30, 33, 35, 0.5) 100%);
+                rgba(255, 255, 255, 0.8) 50%,
+                rgba(30, 33, 35, 0.8) 100%);
+        transform: translateX(-50%) scaleX(0.003);
+        transform-origin: center;
         pointer-events: none;
     }
 }
