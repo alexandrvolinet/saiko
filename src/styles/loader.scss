@@ -1,0 +1,17 @@
+#loader {
+  position: fixed;
+  inset: 0;
+  background: #0e0e0e;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .loader__logo {
+    font-family: "Azonix", sans-serif;
+    font-size: 16px;
+    color: #fff;
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}

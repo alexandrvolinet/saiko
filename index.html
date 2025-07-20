@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="./src/styles/main.scss" />
     <link rel="stylesheet" href="./src/styles/header.scss" />
     <link rel="stylesheet" href="./src/styles/hero.scss" />
     <link rel="stylesheet" href="./src/styles/highlight.scss" />
-    <link rel="stylesheet" href="./src/styles/main.scss" />
+    <link rel="stylesheet" href="./src/styles/loader.scss" />
 
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -17,9 +18,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <script type="module" src="./src/script/header.js"></script>
     <title>Gsap saytomo</title>
   </head>
   <body>
+    <!-- loader -->
+    <div id="loader">
+      <div class="loader__logo">Loading...</div>
+    </div>
+    <!-- loader end -->
+
     <!-- header -->
     <header class="header">
       <nav class="nav">
@@ -74,12 +83,6 @@
         </div>
         <span class="nav__line"></span>
       </nav>
-
-      <!-- <div class="nav__burger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div> -->
     </header>
     <!-- header end -->
 
@@ -109,7 +112,6 @@
 
     <section style="height: 100vh"></section>
 
-    <script type="module" src="./src/script/header.js"></script>
     <script type="module" src="./src/script/hero.js"></script>
     <script type="module" src="./src/script/highlight.js"></script>
   </body>
